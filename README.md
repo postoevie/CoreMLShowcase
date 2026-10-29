@@ -7,7 +7,7 @@ An on-device ML pipeline for iOS: a fine-tuned Russian BERT token classifier, co
 ## Highlights
 
 - PyTorch to Core ML in FP16: package **109 MB to 54 MB**.
-- **2.36 ms** median inference on iPhone 13 (`.cpuAndNeuralEngine`, FP16; 4.20 ms in FP32).
+- **About 0.8 ms per inference** on iPhone 13 (`.cpuAndNeuralEngine`, FP16): 2.36 ms median for the three test phrases run in a row. FP32: 4.20 ms for three, about 1.4 ms each.
 - **0 differing word labels out of 4522** between FP16 and FP32 (640 test samples).
 - Core ML and PyTorch gave identical entity spans on 200 of 200 test samples.
 
@@ -99,7 +99,7 @@ Read these numbers with care: the test set is made by the same generator as the 
 
 ## Performance
 
-iPhone 13, iOS 26.3.1, Release build, 100 iterations, model inference only, median / 95th percentile in ms:
+iPhone 13, iOS 26.3.1, Release build, 100 iterations, model inference only. Each measured iteration runs three phrases in a row, so the times are per three inferences (divide by 3 for one); median / 95th percentile in ms:
 
 | `computeUnits` | FP32 | FP16 |
 |---|---|---|
@@ -110,7 +110,7 @@ iPhone 13, iOS 26.3.1, Release build, 100 iterations, model inference only, medi
 
 Package size 109 MB (FP32) / 54 MB (FP16); first load about 1 s in the test process. These numbers come from a custom performance test (XCTest, `measure` over 100 iterations), not from Apple's built-in Core ML Performance Report in Xcode; method in [docs/performance.md](docs/performance.md#method). Tokenizer 0.13 ms, span decoding 0.04 ms, dish grouping 0.02 ms. Method, CPU time, cold start and the GPU analysis: [docs/performance.md](docs/performance.md).
 
-Compressed variants (post-training weight compression, [docs/model-and-conversion.md](docs/model-and-conversion.md#weight-compression)), measured in one run on the same device, same method, median / 95th percentile in ms:
+Compressed variants (post-training weight compression, [docs/model-and-conversion.md](docs/model-and-conversion.md#weight-compression)), measured in one run on the same device, same method, median / 95th percentile in ms per three inferences:
 
 | | FP16 | INT8 | Palettized 6-bit |
 |---|---|---|---|
