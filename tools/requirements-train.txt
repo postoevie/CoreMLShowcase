@@ -1,0 +1,9 @@
+# Python dependencies for tools/finetune.py (run in Colab in the original work).
+# Kept separate from requirements.txt: datasets 5.x needs huggingface-hub>=1.31,
+# while the conversion pins (transformers 4.57) need huggingface-hub<1.0.
+transformers
+datasets
+evaluate
+accelerate
+seqeval
+sentencepiece
