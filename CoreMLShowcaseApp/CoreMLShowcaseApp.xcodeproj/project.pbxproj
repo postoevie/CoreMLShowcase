@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A17001000000000000000014 /* CoreMLShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1700100000000000000000B /* CoreMLShowcaseApp.swift */; };
+		A17001000000000000000015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1700100000000000000000C /* ContentView.swift */; };
+		A17001000000000000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1700100000000000000000D /* Assets.xcassets */; };
+		A17001000000000000000098 /* SimulatorDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17001000000000000000099 /* SimulatorDiagnosticTests.swift */; };
+		A17001000000000000000017 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1700100000000000000000F /* PerformanceTests.swift */; };
+		A17001000000000000000018 /* MealRecognize in Frameworks */ = {isa = PBXBuildFile; productRef = A17001000000000000000047 /* MealRecognize */; };
+		A17001000000000000000019 /* MealRecognize in Frameworks */ = {isa = PBXBuildFile; productRef = A17001000000000000000048 /* MealRecognize */; };
+		A170010000000000000000B1 /* MealNerRu_int8.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A170010000000000000000A1 /* MealNerRu_int8.mlpackage */; };
+		A170010000000000000000B2 /* MealNerRu_pal6.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A170010000000000000000A2 /* MealNerRu_pal6.mlpackage */; };
+		A170010000000000000000B3 /* CompressedModelPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170010000000000000000A3 /* CompressedModelPerformanceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A17001000000000000000050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17001000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1700100000000000000001E;
+			remoteInfo = CoreMLShowcaseApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1700100000000000000000A /* CoreMLShowcaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLShowcaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1700100000000000000000E /* CoreMLShowcaseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLShowcaseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1700100000000000000000B /* CoreMLShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLShowcaseApp.swift; sourceTree = "<group>"; };
+		A1700100000000000000000C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1700100000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A17001000000000000000099 /* SimulatorDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDiagnosticTests.swift; sourceTree = "<group>"; };
+		A1700100000000000000000F /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		A170010000000000000000A1 /* MealNerRu_int8.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MealNerRu_int8.mlpackage; sourceTree = "<group>"; };
+		A170010000000000000000A2 /* MealNerRu_pal6.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = MealNerRu_pal6.mlpackage; sourceTree = "<group>"; };
+		A170010000000000000000A3 /* CompressedModelPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressedModelPerformanceTests.swift; sourceTree = "<group>"; };
+		A170010000000000000000A4 /* CompressedModels */ = {isa = PBXGroup; children = (
+				A170010000000000000000A1 /* MealNerRu_int8.mlpackage */,
+				A170010000000000000000A2 /* MealNerRu_pal6.mlpackage */,
+			); path = CompressedModels; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A17001000000000000000029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17001000000000000000018 /* MealRecognize in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1700100000000000000002C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17001000000000000000019 /* MealRecognize in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A17001000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A17001000000000000000004 /* CoreMLShowcaseApp */,
+				A17001000000000000000005 /* CoreMLShowcaseAppTests */,
+				A17001000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A17001000000000000000004 /* CoreMLShowcaseApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1700100000000000000000B /* CoreMLShowcaseApp.swift */,
+				A1700100000000000000000C /* ContentView.swift */,
+				A1700100000000000000000D /* Assets.xcassets */,
+			);
+			path = CoreMLShowcaseApp;
+			sourceTree = "<group>";
+		};
+		A17001000000000000000005 /* CoreMLShowcaseAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1700100000000000000000F /* PerformanceTests.swift */,
+				A17001000000000000000099 /* SimulatorDiagnosticTests.swift */,
+				A170010000000000000000A3 /* CompressedModelPerformanceTests.swift */,
+				A170010000000000000000A4 /* CompressedModels */,
+			);
+			path = CoreMLShowcaseAppTests;
+			sourceTree = "<group>";
+		};
+		A17001000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1700100000000000000000A /* CoreMLShowcaseApp.app */,
+				A1700100000000000000000E /* CoreMLShowcaseAppTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1700100000000000000001E /* CoreMLShowcaseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17001000000000000000033 /* Build configuration list for PBXNativeTarget "CoreMLShowcaseApp" */;
+			buildPhases = (
+				A17001000000000000000028 /* Sources */,
+				A17001000000000000000029 /* Frameworks */,
+				A1700100000000000000002A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreMLShowcaseApp;
+			packageProductDependencies = (
+				A17001000000000000000047 /* MealRecognize */,
+			);
+			productName = CoreMLShowcaseApp;
+			productReference = A1700100000000000000000A /* CoreMLShowcaseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1700100000000000000001F /* CoreMLShowcaseAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17001000000000000000034 /* Build configuration list for PBXNativeTarget "CoreMLShowcaseAppTests" */;
+			buildPhases = (
+				A1700100000000000000002B /* Sources */,
+				A1700100000000000000002C /* Frameworks */,
+				A1700100000000000000002D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17001000000000000000051 /* PBXTargetDependency */,
+			);
+			name = CoreMLShowcaseAppTests;
+			packageProductDependencies = (
+				A17001000000000000000048 /* MealRecognize */,
+			);
+			productName = CoreMLShowcaseAppTests;
+			productReference = A1700100000000000000000E /* CoreMLShowcaseAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17001000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A1700100000000000000001E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A1700100000000000000001F = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = A1700100000000000000001E;
+					};
+				};
+			};
+			buildConfigurationList = A17001000000000000000032 /* Build configuration list for PBXProject "CoreMLShowcaseApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A17001000000000000000002;
+			packageReferences = (
+				A17001000000000000000046 /* XCLocalSwiftPackageReference "../Packages/MealRecognize" */,
+			);
+			productRefGroup = A17001000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1700100000000000000001E /* CoreMLShowcaseApp */,
+				A1700100000000000000001F /* CoreMLShowcaseAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1700100000000000000002A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17001000000000000000016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1700100000000000000002D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17001000000000000000028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17001000000000000000014 /* CoreMLShowcaseApp.swift in Sources */,
+				A17001000000000000000015 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1700100000000000000002B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17001000000000000000017 /* PerformanceTests.swift in Sources */,
+				A17001000000000000000098 /* SimulatorDiagnosticTests.swift in Sources */,
+				A170010000000000000000B3 /* CompressedModelPerformanceTests.swift in Sources */,
+				A170010000000000000000B1 /* MealNerRu_int8.mlpackage in Sources */,
+				A170010000000000000000B2 /* MealNerRu_pal6.mlpackage in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A17001000000000000000051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1700100000000000000001E /* CoreMLShowcaseApp */;
+			targetProxy = A17001000000000000000050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1700100000000000000003C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1700100000000000000003D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1700100000000000000003E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CoreMLShowcaseApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.coremlshowcaseapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+			};
+			name = Debug;
+		};
+		A1700100000000000000003F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CoreMLShowcaseApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.coremlshowcaseapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A17001000000000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.coremlshowcaseapp.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreMLShowcaseApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreMLShowcaseApp";
+			};
+			name = Debug;
+		};
+		A17001000000000000000041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.coremlshowcaseapp.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreMLShowcaseApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreMLShowcaseApp";
+				ENABLE_TESTABILITY = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17001000000000000000032 /* Build configuration list for PBXProject "CoreMLShowcaseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1700100000000000000003C /* Debug */,
+				A1700100000000000000003D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17001000000000000000033 /* Build configuration list for PBXNativeTarget "CoreMLShowcaseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1700100000000000000003E /* Debug */,
+				A1700100000000000000003F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17001000000000000000034 /* Build configuration list for PBXNativeTarget "CoreMLShowcaseAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17001000000000000000040 /* Debug */,
+				A17001000000000000000041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A17001000000000000000046 /* XCLocalSwiftPackageReference "../Packages/MealRecognize" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/MealRecognize;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A17001000000000000000047 /* MealRecognize */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A17001000000000000000046 /* XCLocalSwiftPackageReference "../Packages/MealRecognize" */;
+			productName = MealRecognize;
+		};
+		A17001000000000000000048 /* MealRecognize */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A17001000000000000000046 /* XCLocalSwiftPackageReference "../Packages/MealRecognize" */;
+			productName = MealRecognize;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A17001000000000000000001 /* Project object */;
+}
