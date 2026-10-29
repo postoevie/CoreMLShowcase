@@ -1,0 +1,12 @@
+# Python dependencies for tools/convert_to_coreml.py, tools/check_parity.py and tools/evaluate.py
+# NOTE: macOS is required for the Core ML parity check (coremltools can only
+# run predictions on macOS). Conversion itself may work elsewhere.
+# torch is pinned to a version officially supported by coremltools 9.
+# Use Python 3.10-3.12 (newer interpreters may lack wheels for torch/coremltools).
+# Training (tools/finetune.py) has its own file: requirements-train.txt
+torch==2.7.0
+transformers==4.57.6
+sentencepiece==0.2.2
+numpy==2.2.6
+coremltools==9.0
+seqeval==1.2.2
